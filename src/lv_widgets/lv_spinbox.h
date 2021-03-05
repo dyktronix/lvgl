@@ -164,6 +164,14 @@ void lv_spinbox_step_next(lv_obj_t * spinbox);
 void lv_spinbox_step_prev(lv_obj_t * spinbox);
 
 /**
+ * Select specific digit for edition
+ * @param spinbox pointer to spinbox
+ * @param pos the new cursor position in character index
+ *             <= 0 : index from the end of the spinbox
+ */
+void lv_spinbox_set_cursor_pos(lv_obj_t * spinbox, uint8_t pos);    
+    
+/**
  * Increment spinbox value by one step
  * @param spinbox pointer to spinbox
  */
